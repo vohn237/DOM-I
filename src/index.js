@@ -39,9 +39,9 @@ const siteContent = {
     copyright: 'Copyright Great Idea! 2021',
   },
   images: {
-    'logo-img': 'http://localhost:9000/img/logo.png',
-    'cta-img': 'http://localhost:9000/img/cta.png',
-    'accent-img': 'http://localhost:9000/img/accent.png',
+    'logo-img': '../mocks/img/logo.png',
+    'cta-img': '../mocks/img/cta.png',
+    'accent-img': '../mocks/img/accent.png',
   },
 };
 
@@ -83,3 +83,16 @@ contact.setAttribute('href', '#');
 
 const navLogo = navBanner.querySelector('img');
 navLogo.setAttribute('src', siteContent.images['logo-img']);
+
+// hero section
+
+const hero = document.querySelector('.cta');
+
+const heroHeading = hero.querySelector('h1');
+heroHeading.textContent = siteContent.cta.h1;
+
+const ctaBtn = hero.querySelector('button');
+ctaBtn.textContent = siteContent.cta.button;
+
+const ctaImg = hero.querySelector('img');
+ctaImg.setAttribute('src', siteContent.images['cta-img']);
