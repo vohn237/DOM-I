@@ -96,3 +96,19 @@ ctaBtn.textContent = siteContent.cta.button;
 
 const ctaImg = hero.querySelector('img');
 ctaImg.setAttribute('src', siteContent.images['cta-img']);
+
+//middle content
+
+const middleSection = document.querySelector('section.main-content');
+
+const featuresInfo = middleSection.querySelector('div:nth-of-type(1)');
+const featuresInfoH4 = featuresInfo.querySelector('h4');
+featuresInfoH4.textContent = siteContent['main-content']['features-h4'];
+const featuresInfoP = featuresInfo.querySelector('p');
+featuresInfoP.textContent = siteContent['main-content']['features-content'];
+
+const aboutInfo = middleSection.querySelector('div:nth-of-type(2)');
+const aboutInfoH4 = aboutInfo.querySelector('h4');
+aboutInfoH4.textContent = siteContent['main-content']['about-h4'];
+const aboutInfoP = aboutInfo.querySelector('p');
+aboutInfoP.textContent = siteContent['main-content']['about-content'];
