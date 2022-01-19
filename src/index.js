@@ -112,3 +112,49 @@ const aboutInfoH4 = aboutInfo.querySelector('h4');
 aboutInfoH4.textContent = siteContent['main-content']['about-h4'];
 const aboutInfoP = aboutInfo.querySelector('p');
 aboutInfoP.textContent = siteContent['main-content']['about-content'];
+
+const middleImg = middleSection.querySelector('.middle-img');
+middleImg.setAttribute('src', siteContent.images['accent-img']);
+
+// bottomSection
+const bottomSection = document.querySelector('section .bottom-content');
+
+const serviceInfo = bottomSection.querySelector('div:nth-of-type(1)');
+const serviceInfoH4 = serviceInfo.querySelector('h4');
+serviceInfoH4.textContent = siteContent['main-content']['services-h4'];
+const serviceInfoP = serviceInfo.querySelector('p');
+serviceInfoP.textContent = siteContent['main-content']['services-content'];
+
+const productInfo = bottomSection.querySelector('div:nth-of-type(2)');
+const productInfoH4 = productInfo.querySelector('h4');
+productInfoH4.textContent = siteContent['main-content']['product-h4'];
+const productInfoP = productInfo.querySelector('p');
+productInfoP.textContent = siteContent['main-content']['product-content'];
+
+const visionInfo = bottomSection.querySelector('div:nth-of-type(3)');
+const visionInfoH4 = visionInfo.querySelector('h4');
+visionInfoH4.textContent = siteContent['main-content']['vision-h4'];
+const visionInfoP = visionInfo.querySelector('p');
+visionInfoP.textContent = siteContent['main-content']['vision-content'];
+
+//contact
+
+const contactSection = document.querySelector('.contact');
+
+const contactHeader = contactSection.querySelector('h4');
+contactHeader.textContent = siteContent.contact['contact-h4'];
+
+const contactAddress = contactSection.querySelector('p');
+contactAddress.textContent = siteContent.contact['address'];
+
+const contactPhone = contactSection.querySelector('p:nth-of-type(2)');
+contactPhone.textContent = siteContent.contact['phone'];
+
+const contactEmail = contactSection.querySelector('p:nth-of-type(3)');
+contactEmail.textContent = siteContent.contact['email'];
+//footer
+
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer['copyright'];
+footerLink.className = 'bold';
+footerLink.setAttribute('href', '#');
